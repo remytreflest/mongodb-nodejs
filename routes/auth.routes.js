@@ -18,7 +18,7 @@ var validationResult = require("express-validator").validationResult;
 
 /**
  * @swagger
- * /register:
+ * /auth/register:
  *   post:
  *     tags: ["Utilisateurs"]
  *     summary: "Créer un nouvel utilisateur"
@@ -102,7 +102,7 @@ router.post('/register', [
 
 /**
  * @swagger
- * /login:
+ * /auth/login:
  *   post:
  *     tags: ["Utilisateurs"]
  *     summary: "Authentification de l’utilisateur"
@@ -203,7 +203,7 @@ router.post('/login', [
 
 /**
  * @swagger
- * /logout:
+ * /auth/logout:
  *   get:
  *     tags: ["Utilisateurs"]
  *     summary: "Déconnexion de l’utilisateur"
